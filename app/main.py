@@ -17,7 +17,7 @@ from app.exceptions import (
     RecursoNaoEncontrado,
     RegraDeNegocioViolada,
 )
-from app.routers import usuarios
+from app.routers import usuarios, tarefas
 
 # Cada família de erro de domínio corresponde a um código HTTP. A ordem
 # importa: vale o primeiro tipo que casar, do mais específico ao mais geral.
@@ -50,6 +50,7 @@ app = FastAPI(
 
 
 app.include_router(usuarios.router)
+app.include_router(tarefas.router)
 
 
 
