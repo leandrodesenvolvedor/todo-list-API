@@ -1,0 +1,14 @@
+.env
+venv/
+__pycache__/
+*.pyc
+.vscode/
+
+# Cache do pytest, recriado a cada execução da suíte
+.pytest_cache/
+
+# Banco de desenvolvimento em SQLite — é arquivo de trabalho local, nunca
+# versionado. Cada pessoa tem o seu, com os seus dados de teste.
+*.db
+*.db-journal
+*.sqlite3

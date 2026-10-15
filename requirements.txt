@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+sqlalchemy
+pydantic[email]
+python-dotenv
+bcrypt
+requests
+
+# Driver do PostgreSQL, usado em produção.
+# O SQLite não precisa de driver: vem na biblioteca padrão do Python.
+psycopg[binary]
+
+# Somente para desenvolvimento e testes
+pytest
+httpx
